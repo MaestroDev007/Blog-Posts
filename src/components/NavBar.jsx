@@ -19,9 +19,11 @@ const NavBar = () => {
   return (
     <Stack component={`header`}
            px={{xs:2, md: 4}}
+           py={2}
            position={`sticky`}
+           bgcolor={`white`}
            top={0}
-           id={`navbar`}
+           id={`header`}
            direction={`row`}
            justifyContent={{xs: "space-between", lg: ""}}
            alignItems={`center`}>

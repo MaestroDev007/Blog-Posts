@@ -1,4 +1,4 @@
-import { myFont, myFontBold } from "@/lib/font";
+import { myFontLato, myFontBoldLato, myFontBoldJS, myFontJS } from "@/lib/font";
 import MuiThemeProvider from "@/provider/muiThemeProvider";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
@@ -16,13 +16,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${myFont.variable} ${myFontBold.variable} relative`}>
+      <body
+        className={`${myFontJS.variable} ${myFontLato.variable} ${myFontBoldLato.variable} ${myFontBoldJS.variable} relative`}>
         <QueryProvider>
           <BlogProvider>
-          <MuiThemeProvider>
-            <NavBar />
-            {children}
-          </MuiThemeProvider>
+            <MuiThemeProvider>
+              <NavBar />
+              {children}
+            </MuiThemeProvider>
           </BlogProvider>
         </QueryProvider>
       </body>

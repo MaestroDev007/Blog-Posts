@@ -10,6 +10,7 @@
 !.yarn/releases
 !.yarn/versions
 
+
 # testing
 /coverage
 
@@ -17,8 +18,10 @@
 /.next/
 /out/
 
+
 # production
 /build
+
 
 # misc
 .DS_Store

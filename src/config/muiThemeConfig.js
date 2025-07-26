@@ -9,7 +9,31 @@ export const BlogTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: ["lato", "serif"].join(","),
+  
+    fontFamily: "var(--font-josefin-regular), sans-serif",
+
+
+    h1: {
+      fontFamily: "var(--font-josefin-bold), sans-serif",
+    },
+    h2: {
+      fontFamily: "var(--font-josefin-bold), sans-serif",
+    },
+    h3: {
+      fontFamily: "var(--font-josefin-bold), sans-serif",
+    },
+ 
+    body1: {
+      fontFamily: "var(--font-josefin-regular), sans-serif",
+    },
+    body2: {
+      fontFamily: "var(--font-josefin-regular), sans-serif",
+    },
+   
+    button: {
+      fontFamily: "var(--font-josefin-bold), sans-serif",
+      textTransform: "none",
+    },
   },
   breakpoints: {
     values: {
@@ -20,5 +44,5 @@ export const BlogTheme = createTheme({
       xl: 1200,
       xxl: 1400,
     },
-  }, 
+  },
 }); 

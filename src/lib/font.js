@@ -1,13 +1,28 @@
 import localFont from "next/font/local";
 
-export const myFont = localFont({
-  src: "../assets/fonts/Lato-Regular.ttf",
+export const myFontJS = localFont({
+  src: "../assets/fonts/JosefinSans/JosefinSans-Regular.ttf",
   display: "swap",
-  variable: "--font-lato",
+  variable: "--font-JosefinSans",
 });
 
-export const myFontBold = localFont({
-  src: "../assets/fonts/Lato-Bold.ttf",
+export const myFontBoldJS = localFont({
+  src: "../assets/fonts/JosefinSans/JosefinSans-Bold.ttf",
   display: "swap",
-  variable: "--font-lato-bold",
+  variable: "--font-JosefinSans-bold",
 });
+
+
+export const myFontLato = localFont({
+  src: "../assets/fonts/Lato/Lato-Regular.ttf",
+  display: "swap",
+  variable: "--font-Lato",
+});
+
+export const myFontBoldLato = localFont({
+  src: "../assets/fonts/Lato/Lato-Bold.ttf",
+  display: "swap",
+  variable: "--font-Lato-bold",
+});
+
+
